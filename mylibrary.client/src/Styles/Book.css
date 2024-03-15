@@ -1,0 +1,9 @@
+.book {
+    border: 5px solid;
+    border-radius: 50px;
+    border-color: #000000;
+    background-color: white;
+    padding: 10px;
+    width: 375px;
+    height: 500px;
+}

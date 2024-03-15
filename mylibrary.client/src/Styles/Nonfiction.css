@@ -1,0 +1,79 @@
+body .nonfiction-page{
+    margin: 0;
+    padding: 0;
+    background-image: url('../Assets/NonfictionBackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: auto;
+    height: 100vh;
+    width: 100%;
+}
+
+.nonfiction-page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.nonfiction-page-header {
+    font-size: 100px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.nonfiction-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .nonfiction-btn .btn {
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: white;
+        margin: 10px;
+        border-radius: 20px;
+        border: 5px solid;
+        border-color: #000000;
+        font-size: 25px;
+        font-weight: 600;
+        font-family: inherit;
+        background-color: white;
+        opacity: 0.75;
+        color: #000000;
+        cursor: pointer;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 5vh;
+        width: 150px;
+    }
+
+    .nonfiction-btn .btn:hover {
+        background-color: white;
+        opacity: 1;
+    }
+
+.nonfiction-book-data {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 60px;
+    justify-content: center;
+    justify-items: center;
+    margin: 30px;
+}
+
+@media screen and (min-width: 1000px) {
+    .nonfiction-book-data {
+        grid-template-columns: repeat(auto-fit, 375px);
+    }
+}
