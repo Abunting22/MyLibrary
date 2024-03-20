@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyLibrary.Server", "MyLibra
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "mylibrary.client", "mylibrary.client\mylibrary.client.esproj", "{F64438A8-66AB-45C1-91A5-FA9EAA374EA6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyLibrary.Server.Tests", "MyLibrary.Server.Tests\MyLibrary.Server.Tests.csproj", "{3AF060C9-6714-4ECD-B3A6-9B7F681E0C62}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{F64438A8-66AB-45C1-91A5-FA9EAA374EA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F64438A8-66AB-45C1-91A5-FA9EAA374EA6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F64438A8-66AB-45C1-91A5-FA9EAA374EA6}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{3AF060C9-6714-4ECD-B3A6-9B7F681E0C62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AF060C9-6714-4ECD-B3A6-9B7F681E0C62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AF060C9-6714-4ECD-B3A6-9B7F681E0C62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AF060C9-6714-4ECD-B3A6-9B7F681E0C62}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

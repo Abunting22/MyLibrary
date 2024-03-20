@@ -21,7 +21,6 @@ namespace MyLibrary.Server.Repositories
             }
             catch (Exception ex)
             {
-
                 throw;
             }
         }
