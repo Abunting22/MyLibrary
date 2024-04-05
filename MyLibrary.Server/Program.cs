@@ -21,24 +21,22 @@ namespace MyLibrary.Server
                     policy =>
                     {
                         policy.WithOrigins("https://localhost:5173",
-                            "https://localhost:7284");
+                            "https://localhost:7284")
+                        .AllowAnyHeader()
+                        .AllowAnyMethod();
                     });
             });
 
             // Add services to the container.
 
             builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
             builder.Services.AddScoped<IBaseRepository, BaseRepository>();
-            builder.Services.AddScoped<IFictionRepository, FictionRepository>();
-            builder.Services.AddScoped<IFictionService, FictionService>();
-            builder.Services.AddScoped<FictionController>();
-            builder.Services.AddScoped<INonfictionRepository, NonfictionRepository>();
-            builder.Services.AddScoped<INonfictionService, NonfictionService>();
-            builder.Services.AddScoped<NonfictionController>();
+            builder.Services.AddScoped<IBooksRepository, BooksRepository>();
+            builder.Services.AddScoped<IBooksService, BooksService>();
+            builder.Services.AddScoped<BooksController>();
             builder.Services.AddScoped<Book>();
 
             var app = builder.Build();

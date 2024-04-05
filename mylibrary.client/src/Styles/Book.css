@@ -1,9 +1,11 @@
 .book {
     border: 5px solid;
     border-radius: 50px;
-    border-color: #000000;
-    background-color: white;
-    padding: 10px;
+    border-color: #194775;
+    background-color: transparent;
+    color: white;
+    padding: 25px;
     width: 375px;
     height: 500px;
+
 }

@@ -16,7 +16,8 @@ namespace MyLibrary.Server.Repositories
             }
             catch (Exception ex)
             {
-                throw;
+                Console.WriteLine($"Error in GetConnection: {ex.Message}");
+                throw new Exception("Error establishing connection.");
             }
         }
     }

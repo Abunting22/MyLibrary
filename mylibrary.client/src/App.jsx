@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Start from './Pages/Start.jsx';
 import Fiction from './Pages/Fiction.jsx';
 import Nonfiction from './Pages/Nonfiction.jsx';
-import Add from './Pages/Add.jsx';
-import Update from './Pages/Update.jsx';
-import Delete from './Pages/Delete.jsx';
+import Add from './Components/Add.jsx';
+import Update from './Components/Update.jsx';
+import Delete from './Components/Delete.jsx';
 
 function App() {
     return (

@@ -1,33 +1,33 @@
 import React from 'react';
 import { Button, ButtonGroup } from 'react-bootstrap';
-import { GiAstronautHelmet } from "react-icons/gi";
-import { HiBeaker } from "react-icons/hi";
 import { useNavigate } from 'react-router-dom';
-import '../Styles/Start.css';
-
-function Start() {
+import '../Styles/Header.css';
+import Sort from './Sort';
+import Add from './Add';
+function Header() {
     const history = useNavigate();
 
     const handleNavigation = (route) => {
         history(route);
     }
 
+    let page = window.location.pathname === '/fiction' ? 'Fiction' : 'Nonfiction';
+
     return (
-        <div className='start-page'>
-            <h1 className='start-page-header'>My Library</h1>
-            <ButtonGroup className='header-btn' aria-label="Header btns" >
+        <div className='header'>
+            <h1 className='page-header'>{page}</h1>
+            <ButtonGroup className='header-btns'>
                 <Button variant='primary' onClick={() => handleNavigation('/fiction')}>
-                    <span className='icon'><GiAstronautHelmet /></span>
                     Fiction
                 </Button>
                 <Button variant='primary' onClick={() => handleNavigation('/nonfiction')}>
-                    <span className='icon'><HiBeaker /></span>
                     Nonfiction
                 </Button>
+                <Add className='add-btn' />
+                <Sort className='sort-btn'/>
             </ButtonGroup>
         </div>
-
-    )
+    );
 }
 
-export default Start;
+export default Header;
